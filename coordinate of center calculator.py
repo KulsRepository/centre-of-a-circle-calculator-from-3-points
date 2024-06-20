@@ -1,4 +1,4 @@
-def circlefuck(px1, py1, px2, py2, px3, py3):
+def circle(px1, py1, px2, py2, px3, py3):
 
 	def middlepoints(px1, py1, px2, py2, px3, py3):
 
@@ -43,14 +43,14 @@ def circlefuck(px1, py1, px2, py2, px3, py3):
 
 	def iterator(x, y):
 
-		myasshole = 0
-		arithmeticleper = 0
-		fuckyou = 100
-		greenurethra = 100
+		a = 0
+		b = 0
+		c = 100
+		d = 100
 
-		for myasshole in range(fuckyou):
-			freakyfridayswithgrandma = x*myasshole
-			print("x:", "times", myasshole, "is", freakyfridayswithgrandma)
+		for a in range(c):
+			f = x*a
+			print("x:", "times", a, "is", f)
 		print("""
 
 
@@ -58,15 +58,15 @@ def circlefuck(px1, py1, px2, py2, px3, py3):
 
 
 			""")
-		for arithmeticleper in range(greenurethra):
-			cuntsnatcher = y*arithmeticleper
-			print("y", "times", arithmeticleper, "is", cuntsnatcher)
+		for b in range(d):
+			g = y*b
+			print("y", "times", b, "is", g)
 	def radius(px1, py1, x, y):
 
 		radius.radius = ((px1 - x)**2 + (py1 - y)**2)**(1/2)
 		print("the radius is ", radius.radius)
 
-	def printjob(x, y, radius):
+	def printer(x, y, radius):
 
 		print("the equation of the circle is (x -", x, ")^2 + (y -", y, ")^2 =", radius, "^2")
 		print("Be mindful of the signs, two negatives will give a positive")
@@ -77,7 +77,7 @@ def circlefuck(px1, py1, px2, py2, px3, py3):
 	xsolver(equationmaker.slope2pb, equationmaker.slope1pb, equationmaker.b1, equationmaker.b2)
 	ysolver(equationmaker.slope1pb, xsolver.x, equationmaker.b1)
 	radius(px1, py1, xsolver.x, ysolver.y)
-	printjob(xsolver.x, ysolver.y, radius.radius)
+	printer(xsolver.x, ysolver.y, radius.radius)
 	iterator(xsolver.x, ysolver.y)
 
-circlefuck(-5, 5, 5, -4, 6, -7)
+circle(-5, 5, 5, -4, 6, -7)
