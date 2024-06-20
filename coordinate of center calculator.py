@@ -40,26 +40,6 @@ def circle(px1, py1, px2, py2, px3, py3):
 		ysolver.y = slope1pb*x+b1
 		print(ysolver.y)
 
-	def iterator(x, y):
-
-		a = 0
-		b = 0
-		c = 100
-		d = 100
-
-		for a in range(c):
-			f = x*a
-			print("x:", "times", a, "is", f)
-		print("""
-
-
-
-
-
-			""")
-		for b in range(d):
-			g = y*b
-			print("y", "times", b, "is", g)
 	def radius(px1, py1, x, y):
 
 		radius.radius = ((px1 - x)**2 + (py1 - y)**2)**(1/2)
@@ -77,6 +57,5 @@ def circle(px1, py1, px2, py2, px3, py3):
 	ysolver(equationmaker.slope1pb, xsolver.x, equationmaker.b1)
 	radius(px1, py1, xsolver.x, ysolver.y)
 	printer(xsolver.x, ysolver.y, radius.radius)
-	iterator(xsolver.x, ysolver.y)
 
 circle(-5, 5, 5, -4, 6, -7)
