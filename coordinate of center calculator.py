@@ -32,7 +32,6 @@ def circle(px1, py1, px2, py2, px3, py3):
 		#print("slope2b:", slope2pb)
 
 		ft = slope1pb-slope2pb
-		#print("feet:", ft)
 		xsolver.x = (b2-b1)/ft
 		print(xsolver.x)
 
